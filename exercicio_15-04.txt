@@ -1,0 +1,12 @@
+Ex. 2 ("Aula15_04"):
+
+Crie um novo projeto web, agora envolvendo JSP e Servlet. O projeto deverá ter uma primeira página "index.jsp", que deverá receber os valores para cálculo da regra de negócio. Após o "submit", envie os dados recebidos para o servlet, que deverá chamar as regras de negócio. O projeto deverá ter um pacote "negocio", no qual deverá haver a classe Massa, que implementará a interface abaixo:
+
+interface IMassa{
+float converterQuiloParaLibra(float peso);
+float converterLibraParaQuilo(float peso);
+}
+
+O servlet, chamado "ServletConversaoDeMassa", deverá ficar num pacote chamado "servlets".
+
+Nota: 1kg ==> 2,2046lbs

@@ -1,0 +1,12 @@
+Ex. 1 ("Aula16_01"):
+
+
+
+Crie um novo projeto JSP; nele deverá existir, também, um servlet chamado "ServletMedia" (dentro de um pacote exclusivo para servlets). Crie, também, um pacote para a regra de negócio, onde deverá existir uma classe chamada "Media", que implementará uma interface chamada "IMedia", conforme apresentada abaixo:
+
+interface IMedia{
+void calcularMedia(float p1, float p2);
+void calcularMedia(float p1, float p2, float tp);
+}
+
+Na página JSP ("index.jsp"), crie um formulário para receber 2 ou 3 valores numéricos; após recebê-los, repasse-os ao servlet. Este deverá instanciar objeto(s) da classe "Media" e realizar o cálculo devido (somente um dos cálculos deverá ser realizado, com 2 ou 3 valores; não é para realizar ambos os cálculos de uma única vez). O cálculo a ser executado dependerá se o campo correspondente à nota de "tp" foi ou não preenchido. O resultado da média calculada deverá ser exibido entre tags "<h3>", no próprio servlet.
